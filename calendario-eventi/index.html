@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div class="home" id="home">
+  <ul class="posts noList">
+    {% for event in site.data.events reversed %}
+        <li>
+          <span style="font-size: 20px;"  class="date">{{ event.quando }}</span>
+          <span style="font-size: 25px;" class="category">{{ event.dove }}</span>
+          <h3>{{ event.titolo }}</h3>
+          {% if event.descrizione %}<p class="description">{{ event.descrizione }}</p>{% endif %}
+        </li>
+    {% endfor %}
+  </ul
+</div>

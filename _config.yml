@@ -1,10 +1,9 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+title: Il Risveglio A Se Stessi
 
-url: http://brianmaierjr.github.com/long-haul
+url: http://ilrisveglioasestessi.it
 baseurl: ""
 paginate_path: "blog/page:num/"
-permalink: blog/:title/
+permalink: blog/:categories/:title/
 
 markdown: redcarpet
 highlighter: pygments
@@ -12,16 +11,19 @@ paginate: 5
 
 navigation:
  - title: Home
-   url: /index.html
- - title: About
+   url: /
+ - title: Meditazione Attiva
+   url: /blog/meditazione-attiva
+ - title: Naturopatia Tibetana
+   url: /blog/naturopatia-tibetana
+ - title: Calendario Eventi
+   url: /calendario-eventi
+ - title: Chi Siamo
    url: /about
- - title: Contact
-   url: /contact
 
 social:
-   github: brianmaierjr
-   twitter: brianmaierjr
-   facebook: brianmaierjr
-   email: brimaidesigns@gmail.com
+   facebook: roby.potocniak
+   email: info@gilrisveglioasestessi.it
 
-google_analytics: "UA-58263416-1"
+google_analytics: "UA-62267965-1"
+default_locale: "it"

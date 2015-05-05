@@ -2,31 +2,35 @@
 layout: default
 ---
 <div class="post">
-  {% if page.image %}
-    <div class="featuredImage">
-        <img src="{{ '/assets/img/' | prepend: site.baseurl | append: page.image }}" alt="" />
-      </div>
-  {% endif %}
   <h1 class="postTitle">{{ page.title }}</h1>
-  <p class="meta">{{ page.date | date: '%B %d, %Y' }} | <span class="time">{{ page.content | number_of_words | divided_by:180 }}</span> Minute Read</p>
-  
+  <p class="meta">
+    {% assign m = page.date | date: "%-m" %}
+    {% case m %}
+      {% when '1' %}Gennaio
+      {% when '2' %}Febbratio
+      {% when '3' %}Marzo
+      {% when '4' %}Aprile
+      {% when '5' %}Maggio
+      {% when '6' %}Giugno
+      {% when '7' %}Luglio
+      {% when '8' %}Agosto
+      {% when '9' %}Settembre
+      {% when '10' %}Ottobre
+      {% when '11' %}Novembre
+      {% when '12' %}Dicembre
+    {% endcase %}
+    {{ page.date | date: '%d, %Y' }}
+  </p>
+
   {{ content }}
 
   <!-- POST NAVIGATION -->
   <div class="postNav clearfix">
-    {% if page.previous.url %} 
-      <a class="prev{% if page.previous.image %} image{% endif %}" href="{{ page.previous.url | prepend: site.baseurl }}"><span>&laquo;&nbsp;{{ page.previous.title }}</span>
-      {% if page.previous.image %} 
-        <img src="{{ '/assets/img/' | prepend: site.baseurl | append: page.previous.image }}" alt="">
-      {% endif %}
-    </a>
-    {% endif %}  
-    {% if page.next.url %}  
-      <a class="next{% if page.next.image %} image{% endif %}" href="{{ page.next.url | prepend: site.baseurl }}"><span>{{ page.next.title }}&nbsp;&raquo;</span>
-      {% if page.next.image %} 
-        <img src="{{ '/assets/img/' | prepend: site.baseurl | append: page.next.image }}" alt="">
-      {% endif %} 
-      </a>
-    {% endif %} 
+    {% if page.previous.url %}
+      <a class="prev" href="{{ page.previous.url | prepend: site.baseurl }}"><span>&laquo;&nbsp;{{ page.previous.title }}</span></a>
+    {% endif %}
+    {% if page.next.url %}
+      <a class="next" href="{{ page.next.url | prepend: site.baseurl }}"><span>{{ page.next.title }}&nbsp;&raquo;</span></a>
+    {% endif %}
   </div>
 </div>
