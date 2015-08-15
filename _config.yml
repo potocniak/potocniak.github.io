@@ -25,5 +25,8 @@ social:
    facebook: roby.potocniak
    email: info@gilrisveglioasestessi.it
 
+gems:
+  - jekyll-sitemap
+  
 google_analytics: "UA-62267965-1"
 default_locale: "it"
