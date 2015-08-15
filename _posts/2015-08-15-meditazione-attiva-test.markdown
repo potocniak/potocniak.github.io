@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Meditazione Attiva"
+title:  "test"
 date:   2014-12-14
 category: meditazione-attiva
 ---
