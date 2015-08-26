@@ -34,6 +34,20 @@ prose:
   media: 'assets/img'
   metadata:
     _posts:
+      - name: "layout"
+        field:
+          element: "select"
+          label: "Layout"
+          alterable: false
+          options:
+            - name: 'Post'
+              value: post'
+      - name: "title"
+        field:
+          element: "text"
+          label: "Post title"
+          placeholder: "Title"
+          alterable: true
       - name: "category"
         field:
           element: "select"
@@ -44,14 +58,6 @@ prose:
               value: 'meditazione-attiva'
             - name: 'Naturopatia Tibetana'
               value: 'naturopatia-tibetana'
-      - name: "layout"
-        field:
-          element: "select"
-          label: "Layout"
-          alterable: false
-          options:
-            - name: 'Post'
-              value: post'
       - name: "date"
         field:
           element: "hidden"
