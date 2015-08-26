@@ -5,6 +5,7 @@ published: true
 title: test title
 ---
 
+![Sea Fury - Ian Worrall.jpg]({{site.baseurl}}/assets/img/Sea Fury - Ian Worrall.jpg)
 
 ## A New Post
 
