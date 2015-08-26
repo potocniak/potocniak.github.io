@@ -1,9 +1,10 @@
 ---
 date: "2015-08-26 14:03 +0200"
 category: "meditazione-attiva"
-published: false
+published: true
 title: test title
 ---
+
 
 ## A New Post
 
