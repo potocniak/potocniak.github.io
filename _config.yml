@@ -62,5 +62,9 @@ prose:
         field:
           element: "hidden"
           value: "CURRENT_DATETIME"
+      - name: "published"
+        field:
+          element: "hidden"
+          value: 'true'
 google_analytics: "UA-62267965-1"
 default_locale: "it"
