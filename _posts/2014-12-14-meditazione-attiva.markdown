@@ -7,6 +7,7 @@ category: "meditazione-attiva"
 ---
 
 
+
 Ciò che spaventa maggiormente è la libertà.
 L'essere veramente liberi dentro.
 Il camminare senza l’uso di stampelle psicologiche.
@@ -28,4 +29,3 @@ Paura di sentire oltre.
 Paura di comprendere oltre.
 Paura di agire oltre.
 Paura di essere e di amare oltre i ristretti confini del tuo ego.
-
